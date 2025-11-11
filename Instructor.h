@@ -9,5 +9,7 @@ using namespace std;class Instuctor:Person{
     public:
     Instructor(String name="unnamed", int id=++, String department="unnamed", int experienceYears):Person(name,id);
     display():Person.display();
+~ Person(){
+}
 };
 #endif
