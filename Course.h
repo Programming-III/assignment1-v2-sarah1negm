@@ -14,7 +14,7 @@ class Course{
     public:
     addStudent(const Student& s);
     displayCourseInfo();
-}
+};
 
 
 
