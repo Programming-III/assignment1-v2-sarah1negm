@@ -8,13 +8,8 @@ class Person{
     String name;
     int id=-1;
     public:
-    Person(String name="unnamed", int id=++){
-        this.name=name;
-        this.id=id;
-    }
-    display(){
-        cout<< "Name: "<< name<< endl<<"ID: "<< id;
-    }
+    Person(String name="unnamed", int id=++);
+    display();
 }
 
 
