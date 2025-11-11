@@ -10,7 +10,7 @@ class Person{
     public:
     Person(String name="unnamed", int id=++);
     display();
-}
+};
 
 
 
