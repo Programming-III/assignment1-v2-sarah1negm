@@ -7,7 +7,7 @@ using namespace std;class Instuctor:Person{
     String department;
     int experienceYears;
     public:
-    Instructor(String name="unnamed", int id=++, String name="unnamed", int id=++):Person(name,id);
+    Instructor(String name="unnamed", int id=++, String department="unnamed", int experienceYears):Person(name,id);
     display():Person.display();
 }
 #endif
