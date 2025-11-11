@@ -11,6 +11,8 @@ class Student: Person{
     public:
     Student(String name="unnamed", int id=++,string major="untitled",int YearLevel=1):Person(name,id);
     display():Person.display();
+~ Student(){
+}
 };
 
 
