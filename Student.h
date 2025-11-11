@@ -9,13 +9,8 @@ class Student: Person{
     int yearLevel;
     String major;
     public:
-    Student(String name="unnamed", int id=++,string major="untitled",int YearLevel=1):Person(name,id){
-        this.major=major;
-        this.YearLevel=YearLevel;
-    }
-    display():Person.display(){
-        cout<< "Year Level: "<< yearLevel<< endl<<"Major: "<< major;
-    }
+    Student(String name="unnamed", int id=++,string major="untitled",int YearLevel=1):Person(name,id);
+    display():Person.display();
 }
 
 
