@@ -31,7 +31,7 @@ class Student: Person{
         this.YearLevel=YearLevel;
     }
     display():Person.display(){
-        cout<< "Year Level: "<< yearLevel<< endl<<"Major: "<< major;
+        cout<< endl<< "Year Level: "<< yearLevel<< endl<<"Major: "<< major;
     }
 }
 class Instuctor:Person{
@@ -39,12 +39,12 @@ class Instuctor:Person{
     String department;
     int experienceYears;
     public:
-    Instructor(String name="unnamed", int id=++, String name="unnamed", int id=++):Person(name,id){
-        this.name=name;
-        this.id=id;
+    Instructor(String name="unnamed", int id=++, String department"untitled", int experienceYears=0):Person(name,id){
+        this.department=department;
+        this.experienceYears=experienceYears;
     }
     display():Person.display(){
-        cout<< "department: "<< department<< endl<<"Years of experience : "<< experienceYears;
+        cout<< endl<<"department: "<< department<< endl<<"Experience : "<< experienceYears <<" years";
     }
 }
 class Course{
@@ -64,14 +64,45 @@ class Course{
             cout<<" cannot add student, exceeded maximum number of students.";
     }
     displayCourseInfo(){
-        cout<< "course Code: "<< courseCode<< endl<<" course Name: "<< courseName<< endl<<" max Students: "<<maxStudents << endl<< "current Students: "<<currentStudents;
+        cout<< endl<<" course: "<< courseName<< endl<<" max Students: "<<maxStudents << endl<< "current enrolled: ";
         for(int i= currentStudents-1; i>=0 ;i--)
             cout<< endl<<*(students-i);
     }
 }
 // ==================== Main Function ====================
 int main() {
-   
+   Student s1= Student("Sarah Negm",1,"cs", 2);
+    s1.display;
+   Instructor i1= Instructor("Sarah ali","programming", 3 );
+    i1.display();
+    Student s= new Student();
+    Course c1= Course("CSINF5","programming", 30, s,19);
+    c1.addStudent()
+    c1.display(s1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     return 0;
 }
