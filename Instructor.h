@@ -7,12 +7,7 @@ using namespace std;class Instuctor:Person{
     String department;
     int experienceYears;
     public:
-    Instructor(String name="unnamed", int id=++, String name="unnamed", int id=++):Person(name,id){
-        this.name=name;
-        this.id=id;
-    }
-    display():Person.display(){
-        cout<< "department: "<< department<< endl<<"Years of experience : "<< experienceYears;
-    }
+    Instructor(String name="unnamed", int id=++, String name="unnamed", int id=++):Person(name,id);
+    display():Person.display();
 }
 #endif
