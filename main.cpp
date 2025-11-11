@@ -20,7 +20,7 @@ class Person{
     display(){
         cout<< "Name: "<< name<< endl<<"ID: "<< id;
     }
-}
+};
 class Student: Person{
     private:
     int yearLevel;
@@ -33,7 +33,7 @@ class Student: Person{
     display():Person.display(){
         cout<< endl<< "Year Level: "<< yearLevel<< endl<<"Major: "<< major;
     }
-}
+};
 class Instuctor:Person{
     private:
     String department;
@@ -46,7 +46,7 @@ class Instuctor:Person{
     display():Person.display(){
         cout<< endl<<"department: "<< department<< endl<<"Experience : "<< experienceYears <<" years";
     }
-}
+};
 class Course{
     private:
     String courseCode;
@@ -68,7 +68,9 @@ class Course{
         for(int i= currentStudents-1; i>=0 ;i--)
             cout<< endl<<*(students-i);
     }
+~ Student(){
 }
+};
 // ==================== Main Function ====================
 int main() {
    Student s1= Student("Sarah Negm",1,"cs", 2);
@@ -77,8 +79,8 @@ int main() {
     i1.display();
     Student s= new Student();
     Course c1= Course("CSINF5","programming", 30, s,19);
-    c1.addStudent()
-    c1.display(s1);
+    c1.addStudent(s1)
+    c1.display();
 
 
 
