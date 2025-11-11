@@ -20,6 +20,8 @@ class Person{
     display(){
         cout<< "Name: "<< name<< endl<<"ID: "<< id;
     }
+~ Person(){
+}
 };
 class Student: Person{
     private:
@@ -33,6 +35,8 @@ class Student: Person{
     display():Person.display(){
         cout<< endl<< "Year Level: "<< yearLevel<< endl<<"Major: "<< major;
     }
+~ Student(){
+}
 };
 class Instuctor:Person{
     private:
@@ -46,6 +50,8 @@ class Instuctor:Person{
     display():Person.display(){
         cout<< endl<<"department: "<< department<< endl<<"Experience : "<< experienceYears <<" years";
     }
+~ Instructor(){
+}
 };
 class Course{
     private:
@@ -68,7 +74,7 @@ class Course{
         for(int i= currentStudents-1; i>=0 ;i--)
             cout<< endl<<*(students-i);
     }
-~ Student(){
+~ Course(){
 }
 };
 // ==================== Main Function ====================
